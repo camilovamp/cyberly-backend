@@ -18,7 +18,7 @@ services:
   web:
     build: .
     command: >
-      ./wait-for-db.sh bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+      ./wait-for-db.sh python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/app
     ports:
