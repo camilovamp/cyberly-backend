@@ -4,8 +4,15 @@ from common.models import BaseModel
 from common.constants import AVAILABILITY_TYPE_CHOICES
 from common.constants import WEEKDAY_CHOICES
 from common.constants import  RESOURCE_TYPE_CHOICES
+from common.constants import PROFICIENCY_CHOICES
+from common.constants import GENDER_CHOICES, GENDER_UNDISCLOSED
+from common.constants import YEARS_OF_EXPERIENCE_CHOICES
 
 class Profile(BaseModel):
+    
+    def __str__(self):
+        return self.display_name or f"{self.first_name} {self.last_name}"
+    
     user = models.OneToOneField(User, blank=True, null=True, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=32, null=True, blank=True)
     last_name = models.CharField(max_length=32, null=True, blank=True)
@@ -15,6 +22,13 @@ class Profile(BaseModel):
     about = models.TextField(max_length=1024, null=True, blank=True)
     display_name = models.CharField(max_length=64, null=True, blank=True)
     head_line = models.CharField(max_length=255, null=True, blank=True)
+    gender = models.CharField(
+        max_length=2,
+        choices=GENDER_CHOICES,
+        default=GENDER_UNDISCLOSED,
+        null=True,
+        blank=True
+    )
 
     is_vendor = models.BooleanField(null=True, blank=True)
     is_adult = models.BooleanField(null=True, blank=True)
@@ -24,9 +38,10 @@ class Profile(BaseModel):
 
     created_date = models.DateTimeField(null=True, blank=True)
     time_zone = models.CharField(max_length=64, null=True, blank=True)
-
-    def __str__(self):
-        return self.display_name or f"{self.first_name} {self.last_name}"
+    
+    @property
+    def language_names(self):
+        return [pl.language.name for pl in self.languages.all()]
     
 class Category(BaseModel):
     name = models.CharField(max_length=64, null=True, blank=True)
@@ -41,6 +56,8 @@ class Category(BaseModel):
 class ProfileCategory(BaseModel):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, db_column='category_id', related_name='user_categories')
     profile = models.ForeignKey('Profile', on_delete=models.CASCADE, db_column='profile_id', related_name='user_categories')
+    years_of_experience = models.PositiveSmallIntegerField(
+        default=0, choices=YEARS_OF_EXPERIENCE_CHOICES)
 
     class Meta:
         db_table = 'profile_category'
@@ -88,3 +105,23 @@ class Resource(BaseModel):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
     resource_type = models.CharField(max_length=50, choices=RESOURCE_TYPE_CHOICES)
     thumbnail_url = models.URLField(max_length=500, blank=True, null=True)
+
+
+class Language(models.Model):
+    name = models.CharField(max_length=64, unique=True)
+
+    def __str__(self):
+        return self.name
+
+
+class ProfileLanguage(models.Model):
+    profile = models.ForeignKey('Profile', on_delete=models.CASCADE, related_name='languages')
+    language = models.ForeignKey(Language, on_delete=models.CASCADE)
+    proficiency = models.CharField(max_length=16, choices=PROFICIENCY_CHOICES)
+    is_native = models.BooleanField(default=False)
+
+    class Meta:
+        unique_together = ('profile', 'language')
+
+    def __str__(self):
+        return f"{self.profile} - {self.language} ({self.proficiency})"
