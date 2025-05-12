@@ -1,4 +1,6 @@
-from rest_framework import viewsets, DjangoFilterBackend
+from rest_framework import viewsets
+from django_filters.rest_framework import DjangoFilterBackend
+
 from profiles.models import Profile, ProfileCategory, ProfileLanguage
 from .serializers import ProfileSerializer, ProfileCategorySerializer, ProfileLanguageSerializer
 from .filters import ProfileFilter
