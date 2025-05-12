@@ -18,7 +18,13 @@ services:
   web:
     build: .
     command: >
-      ./wait-for-db.sh python manage.py runserver 0.0.0.0:8000
+      sh -c "
+        ./wait-for-db.sh &&
+        sleep 15 &&
+        python manage.py migrate &&
+        python manage.py loaddata cyberly/fixtures/categories.json &&
+        python manage.py loaddata cyberly/fixtures/languages.json &&
+        python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/app
     ports:

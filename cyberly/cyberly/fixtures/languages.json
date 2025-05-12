@@ -1,0 +1,30 @@
+[
+{
+  "model": "profiles.language",
+  "pk": 1,
+  "fields": {
+    "name": "English"
+  }
+},
+{
+  "model": "profiles.language",
+  "pk": 2,
+  "fields": {
+    "name": "Spanish"
+  }
+},
+{
+  "model": "profiles.language",
+  "pk": 3,
+  "fields": {
+    "name": "Portuguese"
+  }
+},
+{
+  "model": "profiles.language",
+  "pk": 4,
+  "fields": {
+    "name": "Italian"
+  }
+}
+]

@@ -1,0 +1,365 @@
+[
+{
+  "model": "profiles.category",
+  "pk": 1,
+  "fields": {
+    "uuid": "f7075e2e-9daf-40a8-bec6-f8cdc33657d7",
+    "date_created": "2025-05-12T01:27:10.732Z",
+    "date_updated": "2025-05-12T01:27:10.732Z",
+    "name": "Accounting & Finance",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 2,
+  "fields": {
+    "uuid": "e1f18b3c-3588-44af-930d-85fd8beb6608",
+    "date_created": "2025-05-12T01:27:22.593Z",
+    "date_updated": "2025-05-12T01:27:22.593Z",
+    "name": "Architecture & Interior Design",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 3,
+  "fields": {
+    "uuid": "6f751667-ecc9-4831-84d7-09b2dff83670",
+    "date_created": "2025-05-12T01:27:28.607Z",
+    "date_updated": "2025-05-12T01:27:28.607Z",
+    "name": "Art & Illustration",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 4,
+  "fields": {
+    "uuid": "0ecd3190-033c-451d-b4f7-911043ca660a",
+    "date_created": "2025-05-12T01:27:36.844Z",
+    "date_updated": "2025-05-12T01:27:36.844Z",
+    "name": "Business Consulting",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 5,
+  "fields": {
+    "uuid": "51b32a8b-e417-4f71-91ba-0cd66f65ec60",
+    "date_created": "2025-05-12T01:27:47.913Z",
+    "date_updated": "2025-05-12T01:27:47.913Z",
+    "name": "Coaching & Life Guidance",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 6,
+  "fields": {
+    "uuid": "3062528a-da49-4ffc-82d2-9e4c4a3347ee",
+    "date_created": "2025-05-12T01:27:55.816Z",
+    "date_updated": "2025-05-12T01:27:55.816Z",
+    "name": "Construction & Skilled Trades",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 7,
+  "fields": {
+    "uuid": "29d45ce4-00a4-4abc-93bd-6eb69f08ca3b",
+    "date_created": "2025-05-12T01:28:02.935Z",
+    "date_updated": "2025-05-12T01:28:02.935Z",
+    "name": "Customer Support",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 8,
+  "fields": {
+    "uuid": "b96fde2b-5ce9-4dd3-ba2a-6cb680195584",
+    "date_created": "2025-05-12T01:28:16.461Z",
+    "date_updated": "2025-05-12T01:28:16.461Z",
+    "name": "Data Science & Analytics",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 9,
+  "fields": {
+    "uuid": "f1af7488-537f-41c4-87a9-64758e69d8b0",
+    "date_created": "2025-05-12T01:28:22.974Z",
+    "date_updated": "2025-05-12T01:28:22.974Z",
+    "name": "Education & Tutoring",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 10,
+  "fields": {
+    "uuid": "49e5ebf5-bfcf-43a1-a36e-e63b51e89022",
+    "date_created": "2025-05-12T01:28:29.146Z",
+    "date_updated": "2025-05-12T01:28:29.146Z",
+    "name": "Engineering",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 11,
+  "fields": {
+    "uuid": "b2733594-e32e-4895-8737-0554b0d77e3e",
+    "date_created": "2025-05-12T01:28:34.550Z",
+    "date_updated": "2025-05-12T01:28:34.550Z",
+    "name": "Fitness & Wellness",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 12,
+  "fields": {
+    "uuid": "12e26f04-086b-4db6-8848-556218ef18b4",
+    "date_created": "2025-05-12T01:28:40.334Z",
+    "date_updated": "2025-05-12T01:28:40.334Z",
+    "name": "Healthcare & Nursing",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 13,
+  "fields": {
+    "uuid": "1f5935c0-305a-4859-884a-d74ff5f97fd2",
+    "date_created": "2025-05-12T01:28:50.707Z",
+    "date_updated": "2025-05-12T01:28:50.708Z",
+    "name": "Human Resources & Recruiting",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 14,
+  "fields": {
+    "uuid": "327e3496-8f8f-4273-ab0f-902398156acf",
+    "date_created": "2025-05-12T01:28:55.589Z",
+    "date_updated": "2025-05-12T01:28:55.589Z",
+    "name": "IT & Network Administration",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 15,
+  "fields": {
+    "uuid": "f9b070d9-b2a6-4471-b074-a8023cc6c95d",
+    "date_created": "2025-05-12T01:29:01.792Z",
+    "date_updated": "2025-05-12T01:29:01.792Z",
+    "name": "Law & Legal Services",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 16,
+  "fields": {
+    "uuid": "d305d9ea-a303-4486-82c5-c83e045d1e84",
+    "date_created": "2025-05-12T01:29:07.093Z",
+    "date_updated": "2025-05-12T01:29:07.093Z",
+    "name": "Logistics & Transportation",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 17,
+  "fields": {
+    "uuid": "8dda3390-0552-40bd-a52f-4c5f980fec0c",
+    "date_created": "2025-05-12T01:29:12.462Z",
+    "date_updated": "2025-05-12T01:29:12.462Z",
+    "name": "Marketing & Communications",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 18,
+  "fields": {
+    "uuid": "13b1412b-3060-4eb1-ab0b-ec3af951cfe4",
+    "date_created": "2025-05-12T01:29:21.182Z",
+    "date_updated": "2025-05-12T01:29:21.182Z",
+    "name": "Medical & Dental",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 19,
+  "fields": {
+    "uuid": "f7e7cef6-b340-4c88-ad36-b6af86c73346",
+    "date_created": "2025-05-12T01:29:26.717Z",
+    "date_updated": "2025-05-12T01:29:26.717Z",
+    "name": "Mental Health & Therapy",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 20,
+  "fields": {
+    "uuid": "800c172c-48ba-40d4-86d7-2d81a649aa91",
+    "date_created": "2025-05-12T01:29:32.154Z",
+    "date_updated": "2025-05-12T01:29:32.154Z",
+    "name": "Operations & Project Management",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 21,
+  "fields": {
+    "uuid": "c4cf9760-54d3-4f0a-adb0-768aaed028a1",
+    "date_created": "2025-05-12T01:29:36.956Z",
+    "date_updated": "2025-05-12T01:29:36.956Z",
+    "name": "Performing Arts & Entertainment",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 22,
+  "fields": {
+    "uuid": "1defe121-65d4-477e-82b1-ab2eee07243d",
+    "date_created": "2025-05-12T01:29:43.605Z",
+    "date_updated": "2025-05-12T01:29:43.605Z",
+    "name": "Photography & Videography",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 23,
+  "fields": {
+    "uuid": "05985232-cfe3-4094-b482-e51058694858",
+    "date_created": "2025-05-12T01:29:48.556Z",
+    "date_updated": "2025-05-12T01:29:48.556Z",
+    "name": "Product Management",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 24,
+  "fields": {
+    "uuid": "3f0d11cd-9040-42ef-b3ff-c2b170af2bd8",
+    "date_created": "2025-05-12T01:29:54.245Z",
+    "date_updated": "2025-05-12T01:29:54.245Z",
+    "name": "Programming & Software Development",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 25,
+  "fields": {
+    "uuid": "8cd48fb2-bc75-4875-b6dd-89f216bfb224",
+    "date_created": "2025-05-12T01:29:59.460Z",
+    "date_updated": "2025-05-12T01:29:59.460Z",
+    "name": "Real Estate",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 26,
+  "fields": {
+    "uuid": "4fd22b73-e382-4d04-9ddd-3bfd351278e2",
+    "date_created": "2025-05-12T01:30:04.028Z",
+    "date_updated": "2025-05-12T01:30:04.028Z",
+    "name": "Retail & Sales",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 27,
+  "fields": {
+    "uuid": "238650b2-96ad-428f-aa19-ebd3f1684688",
+    "date_created": "2025-05-12T01:30:10.280Z",
+    "date_updated": "2025-05-12T01:30:10.280Z",
+    "name": "Social Work & Nonprofit",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 28,
+  "fields": {
+    "uuid": "f3894512-913f-4203-b3fd-ef00b1999367",
+    "date_created": "2025-05-12T01:30:22.652Z",
+    "date_updated": "2025-05-12T01:30:22.652Z",
+    "name": "Teacher & Trainer",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 29,
+  "fields": {
+    "uuid": "ababf746-564a-47f6-b9ff-98a89df5fed9",
+    "date_created": "2025-05-12T01:30:34.558Z",
+    "date_updated": "2025-05-12T01:30:34.558Z",
+    "name": "Technical Support",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 30,
+  "fields": {
+    "uuid": "a901e0ff-b6ac-4245-b587-5e101d9d9c96",
+    "date_created": "2025-05-12T01:30:40.356Z",
+    "date_updated": "2025-05-12T01:30:40.356Z",
+    "name": "Translation & Languages",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 31,
+  "fields": {
+    "uuid": "811bb29d-77cf-4f2b-a53c-d429d0efe456",
+    "date_created": "2025-05-12T01:30:49.808Z",
+    "date_updated": "2025-05-12T01:30:49.808Z",
+    "name": "Virtual Assistance",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 32,
+  "fields": {
+    "uuid": "5722036e-7c9f-4414-b3f7-c976cea11d66",
+    "date_created": "2025-05-12T01:30:56.444Z",
+    "date_updated": "2025-05-12T01:30:56.444Z",
+    "name": "Web & Graphic Design",
+    "is_featured": null
+  }
+},
+{
+  "model": "profiles.category",
+  "pk": 33,
+  "fields": {
+    "uuid": "792cfc6d-9ba6-40df-b844-e457e44e95f7",
+    "date_created": "2025-05-12T01:31:02.862Z",
+    "date_updated": "2025-05-12T01:31:02.862Z",
+    "name": "Writing & Editing",
+    "is_featured": null
+  }
+}
+]
