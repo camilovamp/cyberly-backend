@@ -34,7 +34,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/profiles/?gender=F&online=true&languages=2&categories=4&experience=2&availability_time=16:00",
+					"raw": "http://localhost:8000/api/profiles/?gender=F&languages=2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -51,24 +51,8 @@
 							"value": "F"
 						},
 						{
-							"key": "online",
-							"value": "true"
-						},
-						{
 							"key": "languages",
 							"value": "2"
-						},
-						{
-							"key": "categories",
-							"value": "4"
-						},
-						{
-							"key": "experience",
-							"value": "2"
-						},
-						{
-							"key": "availability_time",
-							"value": "16:00"
 						}
 					]
 				}
@@ -82,7 +66,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"first_name\": \"Lucas\",\n  \"last_name\": \"Gomez\",\n  \"email\": \"lucas@example.com\",\n  \"phone_number\": \"+1122334455\",\n  \"gender\": \"M\",\n  \"profile_categories\": [\n    { \"category\": 1, \"years_of_experience\": 2 }\n  ],\n  \"profile_languages\": [\n    { \"language\": 1, \"proficiency\": \"fluent\", \"is_native\": false }\n  ],\n  \"availabilities\": [\n    {\n      \"availability_type\": \"w\",\n      \"repeat_on\": \"1,3,5\",\n      \"time_start\": \"09:00:00\",\n      \"time_end\": \"17:00:00\"\n    },\n    {\n      \"availability_type\": \"d\",\n      \"date_start\": \"2025-06-01\",\n      \"date_end\": \"2025-06-01\",\n      \"time_start\": \"14:00:00\",\n      \"time_end\": \"18:00:00\"\n    }\n  ]\n}\n",
+					"raw": "{\n  \"first_name\": \"Daniel\",\n  \"last_name\": \"Williams\",\n  \"email\": \"daniel.williams4@example.com\",\n  \"phone_number\": \"+15550004\",\n  \"gender\": \"M\",\n  \"profile_photo\": {\n    \"thumbnail_url\": \"https://randomuser.me/api/portraits/men/18.jpg\"\n  },\n  \"profile_categories\": [\n    {\n      \"category\": 5,\n      \"years_of_experience\": 8\n    }\n  ],\n  \"profile_languages\": [\n    {\n      \"language\": 1,\n      \"proficiency\": \"basic\",\n      \"is_native\": false\n    }\n  ],\n  \"availabilities\": [\n    {\n      \"availability_type\": \"w\",\n      \"time_start\": \"09:00:00\",\n      \"time_end\": \"17:00:00\"\n    }\n  ]\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -99,6 +83,36 @@
 					"path": [
 						"api",
 						"profiles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"camilovamp@gmail.com\",\n  \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
 						""
 					]
 				}
